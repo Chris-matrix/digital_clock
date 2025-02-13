@@ -5,9 +5,8 @@ import React, { useState, useEffect } from 'react';
  * Main application component for the countdown timer app.
  * 
  * This component renders a countdown timer with start, stop, and reset functionality.
- * 
- * @returns {JSX.Element} The rendered App component
- */
+ * The timer starts at 25 minutes and counts down to 0.
+  */
 const App = () => {
   const [time, setTime] = useState(1500); // 25 minutes in seconds (25 * 60)
   const [isRunning, setIsRunning] = useState(false);
@@ -44,11 +43,7 @@ const App = () => {
     setTime(1500); // Reset to 25 minutes
   };
 
-  /**
-   * Formats the time (in seconds) into a string representation of "MM:SS".
-   * @param {number} timeInSeconds - The time in seconds.
-   * @returns {string} A string representing the time in "MM:SS" format.
-   */
+  // Format time in seconds to MM:SS format
   const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60)
       .toString()

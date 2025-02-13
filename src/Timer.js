@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 /**
  * Timer component that displays the current time and updates every second.
- * @returns {JSX.Element} A div containing the current time.
+ * Will return {JSX.Element} A div containing the current time.
  */
 const Timer = () => {
     const [time, setTime] = useState(new Date());
@@ -17,8 +17,8 @@ const Timer = () => {
 
     /**
      * Formats a Date object into a string representation of time.
-     * @param {Date} date - The Date object to format.
-     * @returns {string} A string representing the time in "HH:MM:SS" format.
+     * The Date object to format.
+      * returns {string} A string in the format "HH:MM:SS".
      */
     const formatTime = (date) => {
         const hours = date.getHours().toString().padStart(2, '0');
