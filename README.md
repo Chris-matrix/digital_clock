@@ -1,4 +1,3 @@
-Here's an enhanced README using markdown for your Digital Clock project:
 
 ```markdown
 # Digital Clock
