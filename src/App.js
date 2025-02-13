@@ -51,7 +51,7 @@ const App = () => {
     const seconds = (timeInSeconds % 60).toString().padStart(2, '0');
     return `${minutes}:${seconds}`;
   };
-
+// Returing the JSX elements(the ui of the countdown timer using divs and h1 tages and a button for start, stop and reset)
   return (
     <div className="App">
       <div>
